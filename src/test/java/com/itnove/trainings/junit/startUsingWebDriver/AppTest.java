@@ -16,9 +16,11 @@ public class AppTest extends BaseTest {
         driver.navigate().to("http://compendiumdev.co.uk/selenium/search.php");
         SearchPage searchPage = new SearchPage(driver);
         searchPage.searchKeyword("business center");
+        Thread.sleep(2000);
         ResultsPage resultsPage = new ResultsPage(driver);
         Assert.assertTrue(resultsPage.isResultsListPresent());
         resultsPage.clickOnFirstResult();
+        Thread.sleep(2000);
         Assert.assertTrue(!driver.getCurrentUrl().contains("compendiumdev"));
     }
 }

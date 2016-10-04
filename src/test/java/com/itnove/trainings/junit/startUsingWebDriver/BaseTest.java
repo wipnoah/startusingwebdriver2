@@ -19,13 +19,8 @@ public class BaseTest {
 
     @Before
     public void setUp() throws IOException {
-        String browser = System.getProperty("browser");
-        DesiredCapabilities capabilities;
-        if(browser.equals("chrome"))   capabilities = DesiredCapabilities.chrome();
-        else if(browser.equals("firefox"))   capabilities = DesiredCapabilities.firefox();
-        else if(browser.equals("ie"))   capabilities = DesiredCapabilities.internetExplorer();
-        else  capabilities = DesiredCapabilities.firefox();
-        System.setProperty("webdriver.gecko.driver", "/root/junitmaven/src/main/resources/geckodriver");
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        System.setProperty("webdriver.gecko.driver", "/root/startusingwebdriver/src/main/resources/geckodriver");
         driver = new FirefoxDriver(capabilities);
     }
 
