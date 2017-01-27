@@ -6,9 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-
 import java.io.IOException;
-import java.net.URL;
 
 
 /**
@@ -20,7 +18,7 @@ public class BaseTest {
     @Before
     public void setUp() throws IOException {
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-        System.setProperty("webdriver.gecko.driver", "/root/startusingwebdriver/src/main/resources/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/home/gps/webdriver/geckodriver");
         driver = new FirefoxDriver(capabilities);
     }
 
