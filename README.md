@@ -22,15 +22,13 @@ brew install maven
 
 ## Expected Automate Test Result:
 
-1. Start the mobile simulator (for iOS only; for Android, please start Genymotion Android Emulator manually)
+1. Open browser, e.g., Firefox
 
-2. Open mobile browser, e.g., iOS safari or Android Browser
+2. Visit "http://google.com"
 
-3. Visit "http://google.com"
+3. Verify if the title is "Google"
 
-4. Verify if the title is "Google"
-
-5. Quit the driver
+4. Quit the driver
 
 ## Support
 
