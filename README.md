@@ -3,7 +3,7 @@
 This is the mini-sized package to start use WebDriver with Firefox and Chrome
 
 ## Pre-requisite:
-1. MacOS - Very important, not supporting any other OS.
+1. MacOS or Linux (Very important, not supporting any other OS, like Windows).
 2. Java
 3. Maven
 4. Firefox Installed
@@ -24,9 +24,9 @@ brew install maven
 
 1. Open browser, e.g., Firefox
 
-2. Visit "http://google.com"
+2. Visit "https://www.duckduckgo.com"
 
-3. Verify if the title is "Google"
+3. Verify if the title is "Hawaiian pizza"
 
 4. Quit the driver
 

@@ -15,7 +15,7 @@ public class AppTest extends BaseTest {
     public void testApp() throws InterruptedException {
         driver.navigate().to("http://www.duckduckgo.com");
         SearchPage searchPage = new SearchPage(driver);
-        searchPage.searchKeyword("pizza hawaiana");
+        searchPage.searchKeyword("Hawaiian pizza");
         Thread.sleep(2000);
         ResultsPage resultsPage = new ResultsPage(driver);
         Assert.assertTrue(resultsPage.isResultsListPresent());
