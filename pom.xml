@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.testcloud.trainings.webdriver</groupId>
+    <groupId>com.itnove.trainings.webdriver</groupId>
     <artifactId>StartUsingWebDriver</artifactId>
-    <version>17.03.03</version>
+    <version>17.09.12</version>
     <packaging>jar</packaging>
     <name>JunitMaven</name>
     <url>http://maven.apache.org</url>
@@ -21,17 +21,17 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.1.0</version>
+            <version>3.5.3</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
-            <version>3.1.0</version>
+            <version>3.5.3</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
-            <version>3.1.0</version>
+            <version>3.5.3</version>
         </dependency>
     </dependencies>
 </project>

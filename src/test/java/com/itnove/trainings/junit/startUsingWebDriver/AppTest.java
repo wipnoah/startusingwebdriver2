@@ -13,14 +13,14 @@ public class AppTest extends BaseTest {
 
     @Test
     public void testApp() throws InterruptedException {
-        driver.navigate().to("http://compendiumdev.co.uk/selenium/search.php");
+        driver.navigate().to("http://www.duckduckgo.com");
         SearchPage searchPage = new SearchPage(driver);
-        searchPage.searchKeyword("business center");
+        searchPage.searchKeyword("pizza hawaiana");
         Thread.sleep(2000);
         ResultsPage resultsPage = new ResultsPage(driver);
         Assert.assertTrue(resultsPage.isResultsListPresent());
         resultsPage.clickOnFirstResult();
         Thread.sleep(2000);
-        Assert.assertTrue(!driver.getCurrentUrl().contains("compendiumdev"));
+        Assert.assertTrue(!driver.getCurrentUrl().contains("duckduckgo"));
     }
 }

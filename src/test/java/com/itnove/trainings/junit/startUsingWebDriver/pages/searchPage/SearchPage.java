@@ -12,10 +12,10 @@ public class SearchPage {
 
     private WebDriver driver;
 
-    @FindBy(name = "q")
+    @FindBy(id = "search_form_input_homepage")
     public WebElement searchBox;
 
-    @FindBy(name = "btnG")
+    @FindBy(id = "search_button_homepage")
     public WebElement searchButton;
 
     public SearchPage(WebDriver driver) {

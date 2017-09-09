@@ -19,7 +19,7 @@ public class BaseTest {
     @Before
     public void setUp() throws IOException {
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-        System.setProperty("webdriver.gecko.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "geckodriver");
+        System.setProperty("webdriver.gecko.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "geckodriver-macos");
         driver = new FirefoxDriver(capabilities);
     }
 

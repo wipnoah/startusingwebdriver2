@@ -12,10 +12,10 @@ public class ResultsPage {
 
     private WebDriver driver;
 
-    @FindBy(id = "resultList")
+    @FindBy(id = "links_wrapper")
     public WebElement resultsList;
 
-    @FindBy(xpath = ".//*[@id='resultList']/li[1]/a")
+    @FindBy(xpath = ".//*[@id='r1-0']/div")
     public WebElement firstResult;
 
     public boolean isResultsListPresent() {
