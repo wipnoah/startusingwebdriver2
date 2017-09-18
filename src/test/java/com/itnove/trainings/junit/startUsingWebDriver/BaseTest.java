@@ -20,7 +20,7 @@ public class BaseTest {
     @Before
     public void setUp() throws IOException {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-macos");
+        System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-linux");
         driver = new ChromeDriver(capabilities);
     }
 
