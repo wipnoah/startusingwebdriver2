@@ -41,7 +41,7 @@ public class HoverMenuTest extends BaseTest {
                 WebElement showAll = driver.findElement(By.xpath(".//*[@id='menu']/div[2]/ul/li[" + (i + 1) + "]/div/a"));
                 hover.moveToElement(showAll).build().perform();
                 showAll.click();
-                WebElement breadcrumb = (new WebDriverWait(driver,10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='product-category']/ul")));
+                WebElement breadcrumb = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='product-category']/ul")));
                 assertTrue(driver.findElement(By.xpath(".//*[@id='content']/h2")).getText().equals(categoria));
             }
         }
