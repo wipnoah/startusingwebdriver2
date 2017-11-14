@@ -24,15 +24,15 @@ public class BaseTest {
 
     @Before
     public void setUp() throws IOException {
-        //DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        //System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-linux");
-        //driver = new ChromeDriver(capabilities);
-        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-        System.setProperty("webdriver.gecko.driver",
-                "src" + File.separator + "main"
-                        + File.separator + "resources"
-                        + File.separator + "geckodriver-linux");
-        driver = new FirefoxDriver(capabilities);
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-linux");
+        driver = new ChromeDriver(capabilities);
+        //DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        //System.setProperty("webdriver.gecko.driver",
+        //        "src" + File.separator + "main"
+        //                + File.separator + "resources"
+        //                + File.separator + "geckodriver-linux");
+        //driver = new FirefoxDriver(capabilities);
         wait = new WebDriverWait(driver, 10);
         hover = new Actions(driver);
     }
