@@ -4,6 +4,9 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -38,11 +41,9 @@ public class HoverMenuTest extends BaseTest {
                 WebElement showAll = driver.findElement(By.xpath(".//*[@id='menu']/div[2]/ul/li[" + (i + 1) + "]/div/a"));
                 hover.moveToElement(showAll).build().perform();
                 showAll.click();
-                Thread.sleep(3000);
+                WebElement breadcrumb = (new WebDriverWait(driver,10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='product-category']/ul")));
                 assertTrue(driver.findElement(By.xpath(".//*[@id='content']/h2")).getText().equals(categoria));
             }
-            //////
-            Thread.sleep(3000);
         }
 
     }
