@@ -32,7 +32,7 @@ public class BaseTest {
         //        "src" + File.separator + "main"
         //                + File.separator + "resources"
         //                + File.separator + "geckodriver-linux");
-        //driver = new FirefoxDriver(capabilities);
+       // driver = new FirefoxDriver(capabilities);
         wait = new WebDriverWait(driver, 10);
         hover = new Actions(driver);
     }
