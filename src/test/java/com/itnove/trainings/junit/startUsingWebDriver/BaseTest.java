@@ -39,6 +39,7 @@ public class BaseTest {
        // driver = new FirefoxDriver(capabilities);
         wait = new LocalRemoteWebDriverWait(driver, timeOut);
         hover = new Actions(driver);
+        driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(timeOut, TimeUnit.SECONDS);
         driver.manage().timeouts().setScriptTimeout(timeOut, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
