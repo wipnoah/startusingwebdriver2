@@ -26,10 +26,10 @@ public class iFramesTest extends BaseTest {
         driver.navigate().to("https://the-internet.herokuapp.com/iframe");
         listIframesFromPage(driver);
         driver.switchTo().frame("mce_0_ifr");
-        WebElement editor = driver.findElement(By.xpath(".//*[@id='tinymce']"));
+        WebElement editor = driver.findElement(By.id("tinymce"));
         hover.moveToElement(editor).click().build().perform();
         editor.clear();
         editor.sendKeys("Podem agafar menjar els de la de Media?");
-        Thread.sleep(3000);
+        driver.switchTo().defaultContent();
     }
 }
