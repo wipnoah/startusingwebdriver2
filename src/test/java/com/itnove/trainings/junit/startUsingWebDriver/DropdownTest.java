@@ -21,10 +21,10 @@ public class DropdownTest extends BaseTest {
                 .navigate().to("https://the-internet.herokuapp.com/dropdown");
         List<WebElement> options =
                 driver.findElements(By.xpath(".//*[@id='dropdown']/option"));
-        for (int i = 1; i < options.size(); i++) {
+        for (int i = 2; i <= options.size(); i++) {
             WebElement option =
                     driver.findElement(
-                            By.xpath(".//*[@id='dropdown']/option[" + (i + 1) + "]"));
+                            By.xpath(".//*[@id='dropdown']/option[" + i + "]"));
             option.click();
         }
     }
