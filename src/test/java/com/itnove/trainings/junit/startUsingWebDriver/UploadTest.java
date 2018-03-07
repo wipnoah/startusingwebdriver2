@@ -1,13 +1,11 @@
 package com.itnove.trainings.junit.startUsingWebDriver;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.Test;
 
 import java.io.File;
-import java.util.List;
 
 import static junit.framework.TestCase.assertTrue;
 
@@ -21,7 +19,7 @@ public class UploadTest extends BaseTest {
     public void testApp() throws InterruptedException {
         driver.navigate().to("https://the-internet.herokuapp.com/upload");
         WebElement fileUpload = driver.findElement(By.id("file-upload"));
-        File file = new File("src" + File.separator + "main" + File.separator + "resources" + File.separator + "2-logo-B_activa.png");
+        File file = new File("src" + File.separator + "main" + File.separator + "resources" + File.separator + "logo.png");
         fileUpload.sendKeys(file.getAbsolutePath());
         WebElement buttonUpload = driver.findElement(By.id("file-submit"));
         buttonUpload.click();

@@ -1,10 +1,7 @@
 package com.itnove.trainings.junit.startUsingWebDriver;
 
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.ResultsPage;
-import com.itnove.trainings.junit.startUsingWebDriver.pages.searchPage.SearchPage;
-import org.junit.Assert;
-import org.junit.Test;
 
+import org.testng.annotations.Test;
 
 /**
  * Unit test for simple App.
