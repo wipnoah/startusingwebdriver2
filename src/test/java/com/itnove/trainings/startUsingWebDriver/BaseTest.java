@@ -21,13 +21,13 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-macos");
+        System.setProperty("webdriver.chrome.driver", "src" + File.separator + "main" + File.separator + "resources" + File.separator + "chromedriver-linux");
         driver = new ChromeDriver(capabilities);
 //        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 //        System.setProperty("webdriver.gecko.driver",
 //                "src" + File.separator + "main"
 //                        + File.separator + "resources"
-//                        + File.separator + "geckodriver-macos");
+//                        + File.separator + "geckodriver-linux");
 //        driver = new FirefoxDriver(capabilities);
         wait = new LocalRemoteWebDriverWait(driver, timeOut);
         hover = new Actions(driver);
