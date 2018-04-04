@@ -20,7 +20,7 @@ public class BaseLocalRemoteWebDriverTest {
 
     @BeforeMethod
     public void setUp() throws IOException {
-        DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+        DesiredCapabilities caps = DesiredCapabilities.chrome();
         driver = new RemoteWebDriver(new
                 URL("http://0.0.0.0:4444/wd/hub"),
                 caps);
