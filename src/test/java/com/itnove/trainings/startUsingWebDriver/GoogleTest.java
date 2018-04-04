@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
 
-public class GoogleTest extends BaseTest {
+public class GoogleTest extends BaseLocalRemoteWebDriverTest {
     @Test
     public void testSearch() {
         driver.get("http://www.google.com");

@@ -4,7 +4,7 @@ package com.itnove.trainings.startUsingWebDriver;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class DuckDuckGoSearchTest extends BaseTest {
+public class DuckDuckGoSearchTest extends BaseLocalRemoteWebDriverTest {
     @Test
     public void testSearch() {
         driver.get("https://duckduckgo.com/");
