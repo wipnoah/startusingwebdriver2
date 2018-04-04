@@ -1,6 +1,7 @@
 package com.itnove.trainings.startUsingWebDriver;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -21,6 +22,8 @@ public class BaseLocalRemoteWebDriverTest {
     @BeforeMethod
     public void setUp() throws IOException {
         DesiredCapabilities caps = DesiredCapabilities.chrome();
+        caps.setPlatform(Platform.LINUX);
+
         driver = new RemoteWebDriver(new
                 URL("http://0.0.0.0:4444/wd/hub"),
                 caps);
