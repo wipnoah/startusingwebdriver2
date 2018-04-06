@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class KatalonExampleTest extends BaseLocalRemoteWebDriverTest {
 
 
-    @Test
+    //@Test
     public void testUntitledTestCase() throws Exception {
         driver.get("https://duckduckgo.com/");
         driver.findElement(By.id("search_form_input_homepage")).click();
