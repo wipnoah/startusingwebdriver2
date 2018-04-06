@@ -22,7 +22,7 @@ public class BaseLocalRemoteWebDriverTest {
     @BeforeMethod
     public void setUp() throws IOException {
         DesiredCapabilities caps = DesiredCapabilities.chrome();
-        caps.setPlatform(Platform.WINDOWS);
+        caps.setPlatform(Platform.LINUX);
 
         driver = new RemoteWebDriver(new
                 URL("http://0.0.0.0:4444/wd/hub"),
